@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🅿️ Parking Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand"><img src="./img/logo.jpeg" alt="" /></div>
+    </nav>
+    <div class="container">
+      <div class="seccion1">
+        <!-- SIDEBAR -->
+        <div class="sidebar" style="width: 30%">
+          <form id="parkingForm">
+            <input
+              for="parkingSpace"
+              ="number"
+              id="parkingSpace"
+              name="parkingSpace"
+              min="1"
+              max="20"
+              placeholder="Nº Plaza"
+              required
+            />
+
+            <input
+              for="licensePlate"
+              type="text"
+              id="licensePlate"
+              name="licensePlate"
+              placeholder="Matricula"
+              required
+            />
+
+            <select id="carBrand" name="carBrand" required>
+              <option value="" disabled selected>Seleccionar marca</option>
+              <!-- Las opciones se agregarán aquí dinámicamente -->
+            </select>
+            <br />
+            <div class="boton"><button type="submit">Guardar</button></div>
+          </form>
+
+          <div class="texto">
+            <p>Para deshabilitar la casilla usar el click derecho</p>
+          </div>
+        </div>
+        <!-- CASILLAS -->
+        <div class="parking-lot">
+          <!-- Las plazas de aparcamiento se generan dinámicamente aquí -->
+        </div>
+      </div>
+
+      <div class="container2">
+        <!-- MAPA -->
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="100%"
+              height="316"
+              id="gmap_canvas"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.4690572262725!2d-0.5938259242180528!3d38.29179888220983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd624ac7cee8bef9%3A0xc5fa17e2bf7c8d17!2sPl.%20del%20Mister%C3%AD%20d&#39;Elx%2C%2003320%20Torrellano%2C%20Alicante!5e0!3m2!1ses!2ses!4v1717588487287!5m2!1ses!2ses"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://online.stopwatch-timer.net/">timer stopwatch</a
+            ><br /><a href="https://textcaseconvert.com/"></a><br /><style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 316px;
+                width: 1200px;
+              }</style
+            ><a href="https://www.embedmaps.co">google maps html code</a
+            ><style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 316px;
+                width: 1200px;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+
+      <div class="container3">
+        <h1>APROVECHA NUESTRAS OFERTAS</h1>
+      </div>
+      <div class="container4">
+        <!-- CARDS -->
+        <div class="card">
+          <h2>Especial por reserva anticipada</h2>
+          <p>ahora por <b>15.00€</b> por día</p>
+          <img src="./img/cards/card1.png" alt="" />
+          <p>
+            ¡Llegue temprano y ahorre en su tarifa diaria de estacionamiento!
+            Esta oferta está disponible para quienes estacionan antes de una
+            hora específica cada día. Al aprovechar la oferta especial para
+            madrugadores, puede asegurarse de tener un lugar de estacionamiento
+            seguro y comenzar el día sin la molestia de encontrar un lugar para
+            estacionar.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Recompensas frecuentes de parker</h2>
+          <p>ahora por <b>12.00€</b> por día</p>
+          <img src="./img/cards/card2.png" alt="" />
+          <p>
+            Como aparcador frecuente, puede ganar recompensas por cada reserva
+            que haga en [Nombre del estacionamiento]. Estas recompensas se
+            pueden canjear por descuentos, mejoras y otros beneficios
+            exclusivos. Si usted estaciona diariamente o simplemente necesita
+            estacionar ocasionalmente, puede disfrutar de los beneficios de ser
+            un estacionador frecuente con [Nombre del estacionamiento]
+          </p>
+        </div>
+        <div class="card">
+          <h2>Oferta de estacionamiento</h2>
+          <p>ahora por <b>12.00€</b> por día</p>
+          <img src="./img/cards/card3.png" alt="" />
+          <p>
+            ¡Aproveche nuestra oferta de estacionamiento de fin de semana y
+            estacione con una tarifa reducida! Ya sea que asista a un evento,
+            visite a amigos y familiares o simplemente disfrute de una escapada
+            de fin de semana, puede contar con [Nombre del estacionamiento] para
+            brindarle estacionamiento seguro a un precio asequible.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+      P Parking | Copyright &copy; 2024
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

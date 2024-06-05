@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://img.freepik.com/free-photo/minimalist-hallways-background_23-2149745313.jpg?t=st=1717585797~exp=1717589397~hmac=8090629a8d3ff973b9aebc73a42058fb779adb05603ebbc53ee490ceb3c91ecb&w=826');
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(131, 139, 130);  */
+  background-color: white;
+
+  padding: 0px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-brand img {
+  width: 150px;
+  height: 95px;
+}
+
+/* CONTENEDOR */
+
+.container {
+  width: 100%;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.seccion1 {
+  /* padding: 20px;
+    margin-top: 70px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+     */
+
+  display: flex;
+
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  margin-top: 27px;
+
+  background-color: rgba(255, 255, 255, 0.945);
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.945);
+  padding-top: 40px;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.945);
+  padding: 20px; 
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  padding-bottom: 60px;
+}
+
+.container4 h2 {
+  font-size: 24px; /* Tamaño de fuente del título */
+  margin-bottom: 20px; /* Espacio entre el título y las cards */
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  max-height: 70%;
+  position: absolute;
+  top: 70px; 
+  left: 0;
+  background-color: #111111c3;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+/* FORM */
+
+form {
+  padding-top: 40px;
+}
+
+form input,
+form select {
+  width: calc(100% - 100px);
+  padding: 10px;
+  margin: 10px 20px;
+}
+
+form button {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(119, 219, 126);
+  border-top-right-radius: 6%;
+  border-top-left-radius: 6%;
+  border-bottom-left-radius: 6%;
+  border-bottom-right-radius: 6%;
+}
+
+form button:hover {
+  background-color: rgba(188, 229, 174, 0.901);
+}
+
+.boton {
+  text-align: center;
+}
+
+.texto {
+  text-align: center;
+  padding-top: 50px;
+  margin-right: 5px;
+}
+.texto p {
+  color: white;
+}
+
+/* CASILLAS */
+.parking-lot {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  
+  background-color: #111111c3;
+  margin-left: 150px;
+  width: 700px;
+  padding-bottom: 10px;
+}
+
+.parking-space {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(68, 135, 68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+  background-size: contain; /* Ajusta el tamaño de la imagen de fondo */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  font-weight: bold;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.parking-space span {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* CARDS */
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width: 200px;
+  text-align: center;
+  margin-right: 20px; /* Espacio entre las tarjetas */
+  margin-top: 50px;
+  width: 310px;
+}
+
+/* MAPA */
+
+.gmap_canvas {
+  width: 100%;
+  background-color: white;
+  padding: 70px;
+}
+
+.card:last-child {
+  margin-right: 0; /* Elimina el margen derecho de la última tarjeta */
+}
+
+.card h2 {
+  margin-top: 0px;
+}
+.card img {
+  width: 100%;
+  padding: 10px;
+}
+
+.card p {
+  color: #555;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .container4 {
+    flex-direction: row;
+  }
+  .sidebar {
+    width: 30%;
+    position: absolute;
+    height: calc(100% - 134px);
+    top: 70px;
+    left: 0;
+  }
+  .seccion1 {
+    flex-direction: row;
+    margin-left: 30%;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #111111d8;
+  padding: 20px;
+  color: white;
+}
