@@ -98,19 +98,29 @@ body {
   background-color: #111111c3;
   padding-top: 50px;
   overflow-x: hidden;
+  
+}
+
+.sidebar h1{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 /* FORM */
 
 form {
   padding-top: 40px;
+  
 }
 
 form input,
 form select {
   width: calc(100% - 100px);
   padding: 10px;
-  margin: 10px 20px;
+  margin: 10px 50px;
+
 }
 
 form button {
