@@ -91,7 +91,7 @@ body {
 /* SIDEBAR */
 
 .sidebar {
-  max-height: 70%;
+  max-height: 50%;
   position: absolute;
   top: 70px; 
   left: 0;
